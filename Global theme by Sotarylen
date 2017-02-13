@@ -1,0 +1,100 @@
+@charset "utf-8";
+@namespace html url(http://www.w3.org/1999/xhtml);
+@namespace xul url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+/*
+	以下内容为全局覆盖样式，请谨慎操作！
+	1、定义全局字体和字符样式；
+	2、定义浏览器滚动条样式；
+	3、定义全局表单元素属性；
+*/
+
+/*定义本地字体*/
+@font-face {
+	font-family: "Hiragino Sans GB";
+	font-weight: 400;
+	src: local('Hiragino Sans GB');	
+}
+@font-face {
+	font-family:  "Myriad Pro";
+	src: local("Myriad Pro");
+}
+@font-face {
+	font-family: "Apple Lihei Medium";
+	src: local("苹果俪中黑");
+}
+
+/*
+body, a, a:visited {
+	color: #333;
+}
+a:hover {
+	color: #f60 !important;
+}
+*/
+
+*:not([class*="icon"]):not(i) {
+	/*
+	设置基于 webkit 核心的浏览器的字体抗锯齿效果
+	可设置的属性值包括 none | subpixel-antialiased | antialiased
+	*/
+	-webkit-font-smoothing: subpixel-antialiased !important;
+	
+	/*全局设置字体*/
+    font-family: "Museo 300", "Myriad Pro", "Hiragino Sans GB",  "Apple Lihei Medium",  "WenQuanYi Micro Hei",   "Microsoft Yahei", Helvetica, Arial, Verdana, "sans-serif" !important;
+	/*  
+	Solution 01 : Museo + WenQuanYi Micro Hei
+	font-family:  "Museo 300", "WenQuanYi Micro Hei", Helvetica, Arial, Verdana, "sans-serif" !important;
+	*/
+	
+	/*
+	Solution 02: Lato + Hiragino Sans GB
+	font-family:  "Lato", "Hiragino Sans GB, Helvetica, Arial, Verdana, "sans-serif" !important;
+	*/
+
+	/*
+	全局设置文本属性
+	1、设置文本阴影属性；
+	2、设置文本和链接修饰属性；
+	*/
+	text-shadow: 0.01px 0.01px 0.03px rgba(0,0,0,0.2); 
+	text-decoration: none !important;
+	
+}
+
+/*
+	全局设置浏览器滚动条样式；
+	代码来自 userstyles.org，感谢 Pabli 分享！
+*/
+
+::-webkit-scrollbar{
+	width: 10px!important;
+	height: 10px!important;
+}
+::-webkit-scrollbar-thumb{
+	background-color: #383838!important;
+	border: 2px solid #484848!important;
+	border-radius: 100px!important;
+}
+::-webkit-scrollbar-track{
+	background-color: transparent!important;
+}
+::-webkit-scrollbar-thumb:hover{
+	background: #282828!important;
+}
+::-webkit-scrollbar-thumb:active{
+	background: #181818!important;
+}
+
+/*
+	全局表单元素属性
+	1、设置输入框、文本框、文本区域、按钮、选择器的基本样式；
+	2、设置按钮和提交元素的悬停属性
+*/
+    input[type='submit']:hover, button:hover {
+		cursor: pointer;
+		/*
+		color: #fff;
+        background: #006799;
+		*/
+    }
