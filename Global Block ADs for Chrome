@@ -1,0 +1,1539 @@
+@-moz-document domain("iplaysoft.com") {
+@namespace url(http://www.w3.org/1999/xhtml);
+
+  /*--------------------------------Block ADs------------------------------*/
+  #logo,
+  div#share_toolbar_wrapper,
+  div#sidebar_scroll,
+  ul#section_event,
+  div#show_post_side,
+  span.crumb_ad,
+  div.entry-meta > div,
+  #sidebar ul li.widget,
+  div.entry-cpt .clear,
+  div.entry-meta,
+  div[style="margin:32px 0 6px 0;width:680px;overflow:hidden"],
+  li[style="width:300px;height:250px;background:#f8f8f8;margin:20px 0 22px 0"],
+  div[style="margin:40px auto 50px auto;overflow:hidden;"],
+  div[style="margin:-10px 0 0 0;overflow:hidden"],
+  div[style="margin-top:20px;padding:35px 0 20px 0;border-top:1px solid #ddd"],
+  div[style="width:336px;height:280px;margin:26px auto 26px auto"] {
+    display: none !important;
+  }
+
+
+  /* 
+  :root {
+    --g-font: "MuseoSnsW00-Cond500", "WenQuanYi Micro Hei";
+    --g-font-c: rgba(0,0,0,0.75) !important;
+    
+    --g-link-c: rgba(0,135,240,0.95) !important;
+    
+    --g-shadow: rgba(0,0,0,0.15) !important;
+    --g-body-bg: rgba(0,0,0,0.05) !important;
+    --g-header-bg: rgba(0,0,0,0.75) !important;
+    --g-container-bg: rgba(255,255,255,1) !important;
+  } 
+  
+  
+  /*-----------------------------Layout-------------------------------------
+  
+  body {
+    background: var(--g-body-bg) !important;
+    padding: 0 !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    height: 100% !important;
+    /* box-shadow: 0.1px 0.1px 15px var(--g-shadow) !important; 
+    font-family: var(--g-font) !important;
+    font-size: 13.33px !important;
+    color: rgba(0,0,0,0.75) !important;
+  }
+  div#main,
+  div#footer {
+    width: calc(100% - 100px) !important;
+    margin: inherit !important;
+    overflow: hidden !important;
+    /* box-shadow: 1px 1px 15px var(--g-shadow) !important; 
+  }
+  div#main #header {
+    position: fixed !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+    width: inherit !important;
+    height: 55px !important;
+    background: var(--g-container-bg) !important;
+  }
+  #header #header_search {
+    z-index: 9999 !important;
+    float: unset !important;
+    position: fixed !important;
+    right: 60px;
+    display: block !important;
+    margin: 15px 0 !important;
+  }
+  div.nav {
+    z-index: 1001 !important;
+    position:fixed !important;
+    top: 0 !important;
+    background: transparent !important;
+    height: 55px !important;
+    width: inherit !important;
+    font-size: inherit !important;
+  }
+  div.nav ul li {
+    display: inline-block !important;
+    position: relative !important;
+    float: unset !important;
+    margin: 0 !important;
+  }
+  div.nav ul li a {
+    display: block !important;
+    padding: 0 !important;
+    height: 55px !important;
+    line-height:  55px !important;
+    margin: 0 !important;
+    color: var(--g-link-c) !important;
+    background: transparent !important;
+  }
+  div.nav ul li a span:hover {
+    display: block !important;
+    color: rgba(255,255,255,1) !important;
+    background: rgba(0,128,255,1) !important;
+    transition: all 0.3s;
+  }
+  div.nav ul li a span {
+    color: var(--g-link-c) !important;
+    background: none !important;
+    padding: 0 10px !important;
+    margin: 0 !important;
+    display: block !important;
+    height:  55px !important;
+    cursor: pointer !important;
+  }
+  
+  div.nav_sub_div {
+    position: absolute !important;
+    top: 55px !important;
+  }
+  
+  
+  
+  /*---------------------------------------   ------------------------------------------------
+  div#crumb {
+    display: block !important;
+    position: relative !important;
+    overflow: hidden !important;
+    color: var(--g-font-c) !important;
+    background: var(--g-container-bg) !important;
+    width: 100% !important;
+    padding: 15px 0 15px 10px !important;
+    margin: 0 auto !important;
+    margin-top: 75px !important;
+    margin-bottom: 20px !important;
+  }
+  
+  div#container {
+    display: inline-block !important;
+    width: calc(100% - 330px) !important;
+    margin: 0 10px 0 0 !important;
+    padding: 10px !important;
+    background: var(--g-container-bg) !important;
+  }
+  #container #content,
+  #container #content #postlist {
+    width: 100% !important;
+  }
+  #container #content #postlist .entry-container {
+    width: calc(100% - 200px) !important;
+  }
+  #main #sidebar {
+    display: inline-block !important;
+    float: unset !important;
+    clear: both !important;
+    width: 300px !important;
+    vertical-align: top !important;
+    background: var(--g-container-bg) !important;
+  }
+  
+  div#footer {
+    margin: 20px auto 0 !important;
+    border: none !important;
+    background: var(--g-container-bg) !important;
+  }
+  #footer #ft_contain {
+    width: 100% !important;
+  }
+  
+  /*----------------------------------------------------Stylish END------------------------------------
+}
+}
+
+@-moz-document domain("start.me") {
+@namespace url(http://www.w3.org/1999/xhtml);
+  
+  *:not([class*="icon"]):not(i):not(li) {
+	/* -moz-osx-font-smoothing: grayscale !important; */
+	font-family:  "MuseoSnsW00-Cond500",  "WenQuanYi Micro Hei",  "Source Han Sans CN", "Microsoft Yahei", Helvetica, Arial, Verdana, "sans-serif" !important;
+	/* text-shadow: 0.15px 0.15px 0.4px rgba(0,0,0,0.3); */
+	text-decoration: none !important;
+  }
+  nav.submenu ul li,
+  article.widget header,
+  article.widget ul.itemlist > li .info {
+    text-transform: uppercase !important;
+  }
+    input[type='submit']:hover, button:hover {
+		cursor: pointer;
+    }
+
+}
+
+@-moz-document domain("orsoon.com") {
+@namespace url(http://www.w3.org/1999/xhtml);
+
+
+  div[style="position: fixed; z-index: 2147483647; bottom: 0px; right: 0px; overflow: visible;"],
+  div.down-sect1,
+  div.down-sect2,
+  div.footnotes,
+  div.o-vers,
+  div#other-link {
+    display: none !important;
+  }
+}
+
+@-moz-document domain("thepiratebay.org") {
+@namespace url(http://www.w3.org/1999/xhtml);
+
+  div#sky-banner,
+  img[title="VIP"] {
+    display: none !important;
+  }
+  div#content > div[align="center"] {
+    margin: 20px 0 0 0 !important;
+  }
+  div#content > div[align="center"] > a{
+    display: inline-block !important;
+    background: rgba(0,0,0,0.05) !important;
+    border: none !important;
+    padding: 5px !important;
+    margin-left: -3px !important;
+    min-width: 16px !important;
+    color: rgba(0,128,255,1) !important;
+  }
+  div#content > div[align="center"] > a:hover {
+    background: rgba(0,128,255,1) !important;
+    color: rgba(255,255,255,1) !important;
+    transition: all 0.3s !important;
+  }
+}
+
+@-moz-document domain("1337x.to") {
+/*============================================http://1337x.to/============================================*/
+
+/********************************************START 1337X.TO************************************************/
+
+  /* ADs Block*/
+  div.bitcoin,
+  div.user-box,
+  div.banner-box,
+  div.news,
+  div.eddebedb,
+  div.page-content > hr,
+  div.top-bar-left > ul > li:nth-of-type(3),
+  div.top-bar-left > ul > li:nth-of-type(4),
+  nav > ul > li:nth-of-type(3),
+  nav > ul > li:nth-of-type(4),
+  nav > ul > li:last-child,
+  footer > ul > li:nth-of-type(3),
+  footer > ul > li:last-child,
+  div.torrent-tabs ul li:nth-of-type(3),
+  div.torrent-tabs ul li:last-child,
+  div.torrent-category-detail ul li a#eccfecec,
+  div.torrent-category-detail ul li a#ccfabbeb,
+  div.torrent-category-detail ul li[style="margin-top:0px;"] {
+    display:  none !important;
+  }
+  @-moz-document url-prefix("http://1337x.to/search/"),url-prefix("http://1337x.to/top-100") {
+    .row .pull-right {
+      display: none !important;
+    }
+    .row .page-content {
+      width: 100% !important;
+    }
+  }
+  
+  div.top-bar .container,
+  header .container,
+  main.container {
+    width: 95% !important;
+    max-width: 1900px !important;
+  }
+  table.table-list th,
+  div.row aside.pull-right {
+    text-transform: uppercase !important;
+  }
+  table.table-list td,
+  div.row aside.pull-right {
+    font-family: "MuseoSnsW00-Cond300" !important;
+    font-weight: normal !important;
+    font-size: 13.33px !important;
+    color: rgba(0,0,0,0.75) !important;
+  }
+  table.table-list td.size {
+    padding-left: 10px !important;
+    text-align: left !important;
+  }
+  footer {
+    margin-top: 30px !important;
+  }
+}
+
+@-moz-document domain("zooqle.com") {
+
+
+
+/*============================================https://zooqle.com/============================================*/
+  
+  div#body_container .row .col-md-9 > div.row,
+  div#body_container .row .col-md-9 > h4,
+  div#body_container .row .col-md-9 > div[class="zq-panel panel panel-default"]:nth-of-type(1),
+  div#body_container .row #sidebar > div.zq-panel.panel:nth-of-type(1),
+  div#body_container .row #sidebar > div.zq-panel.panel:nth-of-type(2),
+  div#body_container .row #sidebar > div.zq-panel.panel:nth-of-type(4) {
+    display: none !important;
+  }
+  
+  
+  :root {
+	/*******************************************************************
+    --g-font: "MuseoSnsW00-Cond300", "MuseoSansW01-300", "Segoe UI" ;
+    --g-font-s: 1em;
+    --g-font-c: rgba(0,0,0,0.75);
+    --g-font-lh: 1.25em;
+    --b-font: "MuseoSnsW00-Cond700";
+    --b-font-s: 1.5em;
+    --b-font-lh: 2em !important;
+    --s-font: "MuseoSnsW00-Cond300";
+    --s-font-c: rgba(255,255,255,1);
+    
+    --a-normal-c: rgba(0,128,255,1);
+    --a-hover-c: rgba(0,200,255,1);
+    --a-visited-c: rgba(0,0,0,0.75);
+    
+    --body-bg-c: rgba(240,240,240,1) !important;
+    --m-bg-c: rgba(255,255,255,0.98) !important;
+    --s-bg-c: rgba(235,235,235,1) !important;
+    --t-bg-c: rgba(0,128,255,1) !important;
+    --m-border-c: rgba(0,0,0,0.1) !important; 
+	********************************************************************/
+  }
+  
+  html,
+  body {
+    background: var(--body-bg-c) !important;
+    margin: 0 0 50px 0 !important;
+    padding: 0 !important;
+    font-family: var(--g-font) !important;
+    font-size: var(--g-font-s) !important;
+    color: var(--g-font-c) !important;
+    line-height: var(--g-font-lh) !important;
+  }
+  /*GLOBAL ALINK STYLE*/
+  a,a:visited {
+    color: var(--a-normal-c) !important;
+  }
+  a:hover{
+    color: var(--a-hover-c) !important;
+    text-decoration: none !important;
+  }
+  
+  /*ITEM TITLE STYLE*/  
+  a.txt-title {
+    font-family: var(--b-font) !important;
+    text-transform: uppercase;
+  }
+  .nav-pills.compact > li > a,
+  .sidebar-list > li > a {
+    border-radius: 2px !important;
+    font-family: var(--s-font) !important;
+    text-transform: uppercase !important;
+    padding: 5px 10px !important;
+  }
+  .nav-pills.compact > li.active > a,
+  .nav-pills.compact > li > a:hover,
+  .sidebar-list > li > a:hover {
+    background: var(--t-bg-c) !important;
+    color: var(--s-font-c) !important;
+    transition: all 0.3s ease-in-out;
+  }
+  /*ITEM IMG STYLE*/
+  img.img-rounded {
+    border-radius: 0 !important;
+  }
+  
+  .trans10,
+  .trans20,
+  .trans30,
+  .trans40,
+  .trans50,
+  .trans60,
+  .trans70,
+  .trans80,
+  .trans90 {
+    opacity: 1 !important;
+    filter: alpha(opacity=100) !important;
+  }
+  
+  .small {
+    font-size: 14.5px !important;
+  }
+  
+  
+  nav {
+    display: block !important;
+    z-index: 999 !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    padding: 0 !important;
+    margin: 0 0 20px 0 !important;
+    background: var(--m-bg-c) !important;
+    border: none !important;
+    border-radius: 0 !important;
+    height: 55px !important;
+    min-height: 55px !important;
+    max-height: 55px !important;
+    opacity: 1 !important;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.15),0 1px 5px rgba(0,0,0,0.175);
+  }
+  
+  #tvbox,
+  #movbox,
+  div.zq-panel.panel,
+  div.zq-panel > .panel-body{
+    background: var(--m-bg-c) !important;
+    border: none !important;
+    border-radius: 0 !important;
+    margin: 10px 0 20px 0 !important;
+  }
+  
+  div.zq-panel > .panel-heading {
+    display: block !important;
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    margin: 0 !important;
+    padding: 0 10px !important;
+    letter-spacing: 0 !important;
+    text-transform:  uppercase !important;
+    font-family: var(--b-font) !important;
+    font-size: var(--b-font-s) !important;
+    line-height: var(--b-font-lh) !important;
+    font-weight: bold !important;
+    border-bottom: 1px solid var(--m-border-c) !important;
+  }
+  div.zq-panel > .panel-body {
+    display: block !important;
+    margin: 0 !important;
+    padding: 10px !important;
+  }
+  
+
+  
+  
+  .navbar-default .navbar-nav > li > a,
+  .text-muted4,
+  .text-muted3,
+  .text-muted2,
+  .zq-panel > .panel-heading {
+    color: rgba(0,0,0,0.75) !important;
+  }
+/********************************************END zooqle.com************************************************/
+
+
+}
+
+@-moz-document domain("extratorrent.cd") {
+
+/*============================================https://extratorrent.cd============================================*/
+
+/********************************************START extratorrent.cd************************************************/
+
+  div#MGWrap129225,
+  div[style="display:block !important; visibility:visible !important;"],
+  br {
+    display: none !important;
+  }
+
+
+/********************************************END extratorrent.cd************************************************/
+}
+
+@-moz-document domain("minnano-video.com"), domain("minnano-av.com"), domain("minnano-anime.com") {
+@namespace url(http://www.w3.org/1999/xhtml);
+
+  div#viewed,
+  div.bn250,
+  div.commentboxarea,
+  #details .subMenu,
+  #details .wrap.fxd,
+  article#tagboxarea {
+    display: none !important;
+  }
+  
+  #list #content {
+    text-align: center !important;
+  }
+}
+
+@-moz-document domain("sis001.us") {
+
+  :root {
+    font-size: 16px !important;
+    /*
+    --main-background-color: rgba(0,0,0,0.75);
+    --second-background-color: rgba(0,0,0,0.25);
+    --table-title-background-color: rgba(255,255,255,1);
+    --table-header-background-color: rgba(255,255,255,1);
+    --table-detail-background-color: rgba(255,255,255,1);
+    --main-font-color: rgba();
+    --second-font-color: rgba();
+    --link-normal-font-color: rgba(0,128,255,1);
+    --link-normal-background-color: rgba();
+    --link-hover-font-color: rgba();
+    --link-hover-background-color: rgba();
+    --link-active-font-color: rgba();
+    --link-active-background-color: rgba();
+    --link-visited-font-color: rgba();
+    --link-visited-background-color: rgba();
+    --text-shadow-color: rgba(0,0,0,0.1);
+    */
+  }
+
+  div#header {
+    display: none !important;
+  }
+  
+  html > body {
+    width: 98%;
+    margin: 20px auto;
+    background: transparent;
+  }
+  
+  * {
+    font-size: 1.025em !important;
+    line-height: 2em !important;
+    font-weight: lighter !important;
+    text-shadow: unset !important;
+  }
+  
+  .mainbox h1, .mainbox h3, .mainbox h6 {
+    background: var( --table-title-background-color);
+  }
+  .mainbox thead.category th, .mainbox thead.category td {
+     background: var( --table-header-background-color);
+  } 
+  .forumlist tbody th, .forumlist tbody td, .threadlist tbody th, .threadlist tbody td {
+    background: var( --table-detail-background-color);
+  }
+  .forumlist tbody tr:hover {
+    background: var( --second-background-color) !important;
+  }
+  .forumlist tbody th.new {
+    background-image: none;
+  }
+  
+  
+  body > div#menu,
+  div#wrapper div#menu {
+    height: 55px;
+    border: none;
+    background: var(--main-background-color);
+  }
+  body > div#menu {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  div#wrapper div#menu {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  body > div#menu ul {
+    padding: 0;
+    margin: 0;
+  }
+  body > div#menu ul li {
+    padding: 8px 10px;
+    margin: 0;
+    display: inline-block;
+    float: none;
+  }
+  body > div#menu ul li a {
+    float: inherit;
+    padding: 0;
+    margin: 0;
+    background: none;
+  }
+  
+}
+
+@-moz-document domain("jav789.com"), domain("javhihi.com"), domain("letfap.com"), domain("javbuz.com") {
+
+  div#player-ad,
+  span#ad-top-main > div,
+  span#ad-home1 > div,
+  span#ad-top-main-2 > div,
+  span#ad-top-network > div,
+  div.feature-list,
+  div.movie-actions >div:nth-of-type(1),
+  div.container:nth-child(4),
+  div.container:nth-child(7),
+  div.main-page div.container:nth-child(5) div.col-md-6:nth-child(2),
+  .movie-share,
+  #disqus_thread,
+  .player-ads-bottom {
+      display: none !important;
+  }
+  
+  .pornstar-item .item-thumbnail img {
+    border: 1px solid rgba(0,0,0,0.15);
+  }
+  .pornstar-item .item-thumbnail img:hover {
+    transform: scale(1.05);
+    transition: all 0.35s;
+  }
+}
+
+@-moz-document domain("cilidb.net"), domain("cilifuli.org"), domain("cilifanhao.org"), domain("btdigg.xyz"), domain("feijibt.com"), domain("cilisoba.net"), domain("btdb.to") {
+
+#_atssh,
+sup,
+body > a,
+.sortby > img,
+.category > img,
+.list-box .list dl dd.attr span:nth-of-type(4),
+.list-box .list dl dd.attr span:nth-of-type(5),
+.list-area .item  .attr span:nth-of-type(4),
+.list-area .item  .attr span:nth-of-type(5),
+div.list-box div.sorted-by > span,
+div.example,
+dl.flink,
+div.bar,
+/* div.blank, */
+div.site-top,
+div.shares,
+dl.dlbox,
+dd.flist,
+dd.related,
+div.footer,
+div.push,
+	div#__QQCP_RIGHT_Div,
+	div#__QQCP_LEFT_Div,
+	div#LELE_ShowDIV_UNIONtop,
+div.list-area .info,
+div.category + a,
+div.bdSug_sd,
+dl.hotwords,
+dl.photos,
+div.footer + div,
+div#__jclm_left_couplet,
+div#__jclm_right_couplet,
+/* for btdigg.pw	*/
+div.new_torrent,
+iframe {
+	display: none !important;
+}
+
+
+div.logo {
+	display: inline-block;
+	position: absolute;
+	left: 5px;
+}
+.header-box .logo img {
+	max-height: 48px;
+}
+
+
+div.list-area dl.item dt a b,
+div.list-area dl.item dd.attr span b,
+div.list-box div.list dl dt b,
+div.list-box div.list dl dd.attr span b,
+div.list-box div.list dl dd.attr span:last-child a,
+a, a:active, a:visited {
+	color: rgba(216,4,84,1);
+}
+
+
+div.list-area div.pages a,
+div.list-area div.pages span,
+div.list-area div.sortby a,
+div.list-area div.category a,
+div.list-area dl.item dt a,
+div.list-area dl.item dd.attr span a,
+div.list-box div.page-split a,
+div.list-box div.page-split span,
+div.list-box div.sorted-by a,
+div.list-box div.category a,
+div.list-box div.list dl dt a,
+div.list-box div.list dl dd.attr span a {
+	color: rgba(0,0,0,0.75);
+}
+
+
+div.list-area div.sortby a:hover, 
+div.list-area div.sortby a.active,
+div.list-area div.category a:hover,
+div.list-area div.category a.select,
+div.list-area div.category a.select .n,
+div.list-area div.category a span:hover,
+div.list-area div.pages strong,
+div.list-area div.pages a:hover,
+div.list-box div.sorted-by a:hover,
+div.list-box div.sorted-by a.active,
+div.list-box div.category a:hover,
+div.list-box div.category a.select,
+div.list-box div.page-split strong,
+div.list-box div.page-split a:hover,
+div.list-box div.list dl dd.attr span:last-child a,
+div.list-area dl.item dd.attr span:last-child aï¼
+div.list-area dl.item dd.attr span a,
+div.list-area dl.item dd.attr span:nth-last-child(2) a{
+	color: rgba(255,255,255,1) !important;
+}
+
+
+div.center-box .search .searchBox .btn button,
+div.list-area div.sortby a.active,
+div.list-area div.sortby a:hover,
+div.list-area div.category a.select,
+div.list-area div.category a:hover,
+div.list-box div.sorted-by a.active,
+div.list-box div.sorted-by a:hover,
+div.list-box div.category a.select,
+div.list-box div.category a:hover,
+div.list-box div.list dl dd.attr span:last-child,
+div.list-area .item  .attr span:last-child,
+.header-box .search .searchBox .btn, 
+div.list-area div.pages strong,
+div.list-area div.pages a:hover,
+div.list-box div.page-split strong,
+div.list-box div.page-split a:hover {
+	background: rgba(216,4,84,0.95);
+}
+
+
+div.list-area div.info,
+div.list-area div.pages a,
+div.list-area div.sortby a,
+div.list-area div.category a,
+div.list-area dl.item:hover,
+div.list-box div.info,
+div.list-box div.page-split a,
+div.list-box div.sorted-by a,
+div.list-box div.category a,
+div.list-box div.list dl:hover {
+	background: rgba(0,0,0,0.05);
+}
+
+
+div.list-area dl.item  .attr span,
+div.list-box div.list dl dt,
+div.list-area dl.item  dt,
+div.list-area div.category a .n {
+	background: none;
+}
+
+
+* {
+	/* text-transform: uppercase; */
+}
+
+
+.center-box .search .searchBox,
+.header-box .search .searchBox {
+	border: 0;
+	border-bottom: 2px solid rgba(216,4,84,0.95);
+	border-radius: 0;
+}
+div.list-box div.page-split,
+div.list-area div.pages {
+	border: 0;
+	border-top: 2px solid rgba(216,4,84,0.95) !important;
+}
+
+.wrap-content {
+	box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+div.center-box,
+div.list-box,
+div.list-box div.list dl dd.attr span b,
+div.list-area div.category a .n,
+div.wrap-header div.header-box {
+	padding: 0;
+	margin: 0;
+}
+
+div.wrap-content,
+div.content,
+div.list-area dl.item,
+div.list-area dl.item dt,
+div.list-box div.list dl dt {
+	overflow: hidden;
+}
+
+div.content  *,
+div.list-area div.sortby,
+div.list-area div.category,
+
+div.list-box div.list dl,
+div.list-box div.sorted-by,
+div.list-box div.category {
+	border: 0 !important;
+}
+
+div.center-box .search .searchBox .kwd input,
+div.list-box div.sorted-by,
+div.list-box div.category,
+div.list-box div.list dl dt,
+
+div.list-area,
+div.list-area div.category a .n {
+	font-size: 0.85em;
+	font-weight: normal;
+	font-style: normal;
+	line-height: normal;
+}
+
+div.list-area dl.item dd.attr,
+div.list-area dl.item dd.attr span b,
+div.list-area dl.item dd.attr span a,
+div.list-box div.list dl dd.attr,
+div.list-box div.list dl dd.attr span a,
+div.list-box div.list dl dd.attr span b {
+	font-size: 0.75em;
+	font-weight: 100;
+	line-height: normal;
+}
+
+div.list-box div.list dl dt a,
+div.list-area dl.item dt a {
+	font-size: 1em;
+}
+
+div.list-area div.sortby,
+div.list-area div.category,
+div.list-box div.sorted-by,
+div.list-box div.category,
+div.list-box div.list dl {
+	display: block;
+}
+div.list-area div.sortby a,
+div.list-area div.category a,
+div.list-box div.sorted-by a,
+div.list-box div.category a,
+div.list-box div.list dl dt,
+div.list-box div.list dl dd,
+div.list-area dl.item dt,
+div.list-area dl.item dd.attr {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+div.list-area div.sortby a,
+div.list-area div.category a,
+div.list-area dl.item dd.attr span,
+div.list-area dl.item dd.attr span a,
+div.list-area dl.item dd.attr span b,
+div.list-area div.pages strong,
+div.list-area div.pages a,
+div.list-box div.sorted-by a,
+div.list-box div.category a,
+div.list-box div.list dl dd.attr span,
+div.list-box div.list dl dd.attr span a,
+div.list-box div.list dl dd.attr span b,
+div.list-box div.page-split strong,
+div.list-box div.page-split a {
+	border-radius: 4px;
+}
+
+div.list-area div.sortby a.active,  
+div.list-area div.sortby a:hover,
+div.list-area div.category a.select,
+div.list-area div.category a:hover,
+div.list-area dl.item:hover,
+div.list-area dl.item dd.attr span:hover,
+
+div.list-box div.sorted-by a.active,
+div.list-box div.sorted-by a:hover,
+div.list-box div.category a.select,
+div.list-box div.category a:hover,
+div.list-box div.list dl:hover,
+div.list-box div.list dl dd.attr span:hover {
+	/*
+	transition: text-decoration 0.3s linear 0s, color 0.3s linear 0.1s;
+	*/
+	transition: all 0.3s;
+}
+
+div.list-box div.list dl dt,
+div.list-area dl.item dt {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+div.list-box div.list dl dt,
+div.list-area dl.item dt {
+	pointer-events: none; 
+	cursor: default;
+}
+
+
+@media screen and (min-width: 901px) {
+
+/* ===================Main frame Start========================== */
+div.wrap-content  {
+	max-width: 1000px;
+	margin:0 auto;
+}
+/* ===================Topbar Start============================= */
+div.wrap-header {
+	width: 100%;
+}
+div.center-box,
+div.wrap-header div.header-box{
+	width: inherit;
+}
+div.center-box .search,
+div.wrap-header div.header-box .search {
+	padding: 0;
+	margin: 0;
+}
+div.header-box .search .searchBox .kwd input {
+	padding-left: 175px;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+/* ===================Content Start=========================== */
+div.content{
+	width: inherit;
+	margin: 0 auto;
+}
+/* ===================Catagory and sort Start=================== */
+div.list-area div.sortby,
+div.list-area div.category,
+div.list-box div.sorted-by,
+div.list-box div.category {
+	margin: inherit;
+	padding: 5px 0 5px 10px;
+}
+div.list-area div.category span {
+	margin-right: 5px;
+}
+div.list-area div.sortby a,
+div.list-area div.category a,
+div.list-box div.sorted-by a,
+div.list-box div.category a {
+	padding: 5px 6px;
+	margin: 0 3px 0 0;
+}
+/* ===================Search result item Start=================== */
+div.list-area dl.item,
+div.list-box div.list dl {
+	clear: left;
+	margin: 0;
+	padding: 5px 0;
+}
+div.list-box div.list dl dt,
+div.list-area dl.item dt {
+	width: calc( 100% - 420px );
+	padding: 7.8px 10px;
+}
+div.list-box div.list dl dd,
+div.list-area dl.item dd.attr {
+	margin: 0;
+	padding: 5px 0;
+}
+div.list-box div.list dl dd.attr span,
+div.list-area dl.item dd.attr span {
+	margin: 0;
+	padding: 5px;
+}
+div.list-box div.list dl dd.attr span:last-child,
+div.list-area dl.item dd.attr span:last-child,
+div.list-area dl.item dd.attr span:nth-last-child(2) {
+	float: left;
+	padding: 5px 10px;
+	margin-right: 5px;
+}
+/* ===================Pages Start============================ */
+div.list-box div.page-split,
+div.list-area div.pages {
+	text-align: center;
+	margin: 0;
+	padding: 10px 0;
+}
+div.list-box div.page-split strong,
+div.list-box div.page-split a,
+div.list-area div.pages strong,
+div.list-area div.pages a {
+	margin: 0 5px 0 0;
+}
+}
+
+/* Ã§ÂÂ²Ã§Â¦ÂÃ¦Â¥Â¼Ã§ÂÂ²Ã¨ÂµÂÃ¨ÂÂ¥Ã¦Â°ÂÃ¥ÂÂ¤Ã¨ÂÂ«Ã¦Â°ÂÃ©Â¹Â¿Ã¨ÂÂ²Ã¦Â°ÂÃ¥ÂºÂÃ©ÂÂÃ¦Â°ÂÃ¦Â½ÂÃ¥Â¨Â 481 ~ 900 Ã¦Â°ÂÃ¨ÂÂÃ¨ÂÂ«Ã¨ÂÂ½Ã©ÂºÂ Ã¦Â°ÂÃ¥ÂºÂÃ©ÂÂÃ¦Â°ÂÃ¦Â½ÂÃ¥Â¨ÂÃ¨ÂÂ½Ã¨ÂÂ·Ã¨ÂÂÃ¥Â¿Â Ã¨Â·Â¯Ã¦Â°ÂÃ¥Â½ÂÃ¨ÂÂ«Ã§ÂÂ«Ã¥ÂºÂÃ¦ÂÂ®Ã¨ÂÂ½Ã©ÂÂÃ¥ÂºÂ */
+
+@media all and (min-width: 481px) and (max-width: 900px) {
+	/* ===================Main frame Start========================== */
+.wrap-content  /*Ã¨ÂÂÃ©ÂÂÃ§Â¢ÂÃ¨ÂÂÃ¨ÂÂºÃ¥ÂÂÃ§ÂÂ²Ã¨ÂµÂÃ§Â¦ÂÃ¥Â¿ÂÃ©ÂÂÃ¨Â Ã¥Â¿ÂÃ¨ÂÂ»Ã©ÂÂ²*/ {
+	width: 100%;
+	margin:0 auto;
+}
+	
+/* ===================Topbar Start============================= */
+div.wrap-header /*Ã¨ÂÂÃ©ÂÂÃ©ÂÂ²Ã¥Â¿Â Ã¨ÂÂ«*/{
+	width: 100%;
+}
+div.center-box,
+div.wrap-header div.header-box  /*Ã¨ÂÂÃ©ÂÂÃ©ÂÂ²Ã¥Â¿Â Ã¨ÂÂ«Ã¥Â¿ÂÃ¨ÂÂ¬Ã¨ÂÂ¹Ã¨ÂÂ½Ã©ÂºÂÃ¥ÂÂÃ¥Â¿ÂÃ©ÂÂÃ¨Â */{
+	width: inherit;
+}
+div.center-box .search,
+div.wrap-header div.header-box .search /*Ã¨ÂÂÃ©ÂÂÃ©ÂÂ²Ã¥Â¿Â Ã¨ÂÂ«Ã¥Â¿ÂÃ¨ÂÂ¬Ã¨ÂÂ¹Ã¨ÂÂ½Ã©ÂºÂÃ¥ÂÂÃ¥Â¿ÂÃ©ÂÂÃ¨Â Ã§ÂÂ«Ã©ÂÂÃ§Â¯ÂÃ¦Â°ÂÃ¨ÂÂ§Ã¨ÂÂ²Ã¦Â°ÂÃ¨ÂÂÃ¨ÂÂÃ¨ÂÂ½Ã©ÂºÂ */{
+	padding: 0;
+	margin: 0;
+}
+div.header-box .search .searchBox .kwd input   /*Ã¨ÂÂÃ©ÂÂÃ©ÂÂ²Ã¥Â¿Â Ã¨ÂÂ«Ã¥Â¿ÂÃ¨ÂÂ¬Ã¨ÂÂ¹Ã¨ÂÂ½Ã©ÂºÂÃ¥ÂÂÃ¥Â¿ÂÃ©ÂÂÃ¨Â Ã§ÂÂ«Ã©ÂÂÃ§Â¯ÂÃ¦Â°ÂÃ¨ÂÂ§Ã¨ÂÂ²Ã¦Â°ÂÃ¨ÂÂÃ¨ÂÂÃ¨ÂÂ½Ã©ÂºÂ Ã¨ÂÂ½Ã¨ÂÂ·Ã¨ÂÂÃ¦Â°ÂÃ¨Â·Â¯Ã¥Â¨ÂÃ¨ÂÂ½Ã¥Â½ÂÃ¦Â¼ÂÃ§ÂÂ«Ã©Â©Â´Ã¨ÂÂ¸*/{
+	padding-left: 10px;
+}
+
+/* ===================Content Start=========================== */
+div.content /*Ã§ÂÂ²Ã¨ÂµÂÃ§Â¦ÂÃ§ÂÂ«Ã¥Â¨ÂÃ¨ÂÂÃ¦Â°ÂÃ¨Â Ã¨ÂÂÃ¦Â°ÂÃ¥ÂºÂÃ©Â¹Â¿Ã¦Â°ÂÃ¥ÂºÂÃ©Â¹Â¿Ã¦Â°ÂÃ¨ÂÂ¶Ã§Â¯Â*/{
+	width: inherit;
+	margin: 0 auto;
+}
+/* ===================Catagory and sort Start=================== */
+div.list-area div.sortby,
+div.list-area div.category,
+div.list-box div.sorted-by,
+div.list-box div.category {
+	margin: inherit;
+	padding: 5px 0 5px 10px;
+	width: 200%;
+	overflow: hidden;
+}
+div.list-area div.sortby a,
+div.list-area div.category a,
+div.list-box div.sorted-by a,
+div.list-box div.category a	{
+	padding: 5px 6px;
+	margin: 0 3px 0 0;
+}
+div.list-area div.category > span {
+	margin-right: 5px;
+}
+div.list-area div.category a span.n {
+	display: none;
+}
+/* ===================Search result item Start=================== */
+div.list-area dl.item,
+div.list-box div.list dl {
+	clear: left;
+	margin: 0;
+	padding: 5px 0;
+}
+div.list-area dl.item dt,
+div.list-box div.list dl dt {
+	width: calc( 100% - 106px );
+	padding: 7.8px 10px;
+}
+div.list-area dl.item dd.attr span:nth-of-type(1),
+div.list-area dl.item dd.attr span:nth-of-type(2),
+div.list-area dl.item dd.attr span:nth-of-type(3),
+div.list-box div.list dl dd.attr span:nth-of-type(1),
+div.list-box div.list dl dd.attr span:nth-of-type(2),
+div.list-box div.list dl dd.attr span:nth-of-type(3) {
+	display: none;
+}
+div.list-box div.list dl dd.attr span:last-child,
+div.list-area dl.item dd.attr span:last-child /* Ã¨ÂÂ½Ã¦ÂÂ¢Ã¨ÂÂÃ¦Â°ÂÃ¨ÂÂ¤Ã¨ÂÂ¸Ã¨ÂÂÃ¨ÂÂ¯Ã¦ÂÂ®Ã¥Â¿ÂÃ¨ÂÂ¨Ã¦Â¥Â¼Ã¦Â°ÂÃ¨ÂÂÃ¨ÂÂÃ¨ÂÂ½Ã©ÂºÂ  */ {
+	padding: 5px;
+	margin-right: 3px;
+}
+/* ===================Pages Start============================ */
+div.list-area div.pages {
+	text-align: center;
+	margin: 0;
+	padding: 10px 0;
+}
+div.list-area div.pages strong,
+div.list-area div.pages a {
+	margin: 0 5px 0 0;
+}
+}
+
+/* Ã§ÂÂ²Ã§Â¦ÂÃ¦Â¥Â¼Ã§ÂÂ²Ã¨ÂµÂÃ¨ÂÂ¥Ã¦Â°ÂÃ¥ÂÂ¤Ã¨ÂÂ«Ã¦Â°ÂÃ©Â¹Â¿Ã¨ÂÂ²Ã¦Â°ÂÃ¥ÂºÂÃ©ÂÂÃ¦Â°ÂÃ¦Â½ÂÃ¥Â¨Â 321 ~ 480 Ã¦Â°ÂÃ¨ÂÂÃ¨ÂÂ«Ã¨ÂÂ½Ã©ÂºÂ Ã¦Â°ÂÃ¥ÂºÂÃ©ÂÂÃ¦Â°ÂÃ¦Â½ÂÃ¥Â¨ÂÃ¨ÂÂ½Ã¨ÂÂ·Ã¨ÂÂÃ¥Â¿Â Ã¨Â·Â¯Ã¦Â°ÂÃ¥Â½ÂÃ¨ÂÂ«Ã§ÂÂ«Ã¥ÂºÂÃ¦ÂÂ®Ã¨ÂÂ½Ã©ÂÂÃ¥ÂºÂ */
+
+@media all and (min-width: 301px) and (max-width: 480px) {
+/* ===================Main frame Start========================== */
+.wrap-content  /*Ã¨ÂÂÃ©ÂÂÃ§Â¢ÂÃ¨ÂÂÃ¨ÂÂºÃ¥ÂÂÃ§ÂÂ²Ã¨ÂµÂÃ§Â¦ÂÃ¥Â¿ÂÃ©ÂÂÃ¨Â Ã¥Â¿ÂÃ¨ÂÂ»Ã©ÂÂ²*/ {
+	width: 100%;
+	margin:0 auto;
+}
+	
+/* ===================Topbar Start============================= */
+div.wrap-header /*Ã¨ÂÂÃ©ÂÂÃ©ÂÂ²Ã¥Â¿Â Ã¨ÂÂ«*/{
+	width: 100%;
+}
+div.center-box,
+div.wrap-header div.header-box  /*Ã¨ÂÂÃ©ÂÂÃ©ÂÂ²Ã¥Â¿Â Ã¨ÂÂ«Ã¥Â¿ÂÃ¨ÂÂ¬Ã¨ÂÂ¹Ã¨ÂÂ½Ã©ÂºÂÃ¥ÂÂÃ¥Â¿ÂÃ©ÂÂÃ¨Â */{
+	width: inherit;
+}
+div.center-box .search,
+div.wrap-header div.header-box .search /*Ã¨ÂÂÃ©ÂÂÃ©ÂÂ²Ã¥Â¿Â Ã¨ÂÂ«Ã¥Â¿ÂÃ¨ÂÂ¬Ã¨ÂÂ¹Ã¨ÂÂ½Ã©ÂºÂÃ¥ÂÂÃ¥Â¿ÂÃ©ÂÂÃ¨Â Ã§ÂÂ«Ã©ÂÂÃ§Â¯ÂÃ¦Â°ÂÃ¨ÂÂ§Ã¨ÂÂ²Ã¦Â°ÂÃ¨ÂÂÃ¨ÂÂÃ¨ÂÂ½Ã©ÂºÂ */{
+	padding: 0;
+	margin: 0;
+}
+div.header-box .search .searchBox .kwd input   /*Ã¨ÂÂÃ©ÂÂÃ©ÂÂ²Ã¥Â¿Â Ã¨ÂÂ«Ã¥Â¿ÂÃ¨ÂÂ¬Ã¨ÂÂ¹Ã¨ÂÂ½Ã©ÂºÂÃ¥ÂÂÃ¥Â¿ÂÃ©ÂÂÃ¨Â Ã§ÂÂ«Ã©ÂÂÃ§Â¯ÂÃ¦Â°ÂÃ¨ÂÂ§Ã¨ÂÂ²Ã¦Â°ÂÃ¨ÂÂÃ¨ÂÂÃ¨ÂÂ½Ã©ÂºÂ Ã¨ÂÂ½Ã¨ÂÂ·Ã¨ÂÂÃ¦Â°ÂÃ¨Â·Â¯Ã¥Â¨ÂÃ¨ÂÂ½Ã¥Â½ÂÃ¦Â¼ÂÃ§ÂÂ«Ã©Â©Â´Ã¨ÂÂ¸*/{
+	padding-left: 10px;
+}
+
+/* ===================Content Start=========================== */
+div.content /*Ã§ÂÂ²Ã¨ÂµÂÃ§Â¦ÂÃ§ÂÂ«Ã¥Â¨ÂÃ¨ÂÂÃ¦Â°ÂÃ¨Â Ã¨ÂÂÃ¦Â°ÂÃ¥ÂºÂÃ©Â¹Â¿Ã¦Â°ÂÃ¥ÂºÂÃ©Â¹Â¿Ã¦Â°ÂÃ¨ÂÂ¶Ã§Â¯Â*/{
+	width: inherit;
+	margin: 0 auto;
+}
+/* ===================Catagory and sort Start=================== */
+div.list-area div.sortby,
+div.list-area div.category,
+div.list-box div.sorted-by,
+div.list-box div.category {
+	margin: inherit;
+	padding: 5px 0 5px 10px;
+	width: 300%;
+	overflow: hidden;
+}
+div.list-area div.sortby a,
+div.list-area div.category a,
+div.list-box div.sorted-by a,
+div.list-box div.category a	{
+	padding: 5px 6px;
+	margin: 0 3px 0 0;
+}
+div.list-area div.category > span {
+	margin-right: 5px;
+}
+div.list-area div.category a span.n {
+	display: none;
+}
+/* ===================Search result item Start=================== */
+div.list-area dl.item,
+div.list-box div.list dl {
+	clear: left;
+	margin: 0;
+	padding: 5px 0;
+}
+div.list-area dl.item dt,
+div.list-box div.list dl dt {
+	width: calc( 100% - 85px );
+	padding: 5px;
+}
+div.list-area dl.item dd.attr span:nth-of-type(1),
+div.list-area dl.item dd.attr span:nth-of-type(2),
+div.list-area dl.item dd.attr span:nth-of-type(3),
+div.list-box div.list dl dd.attr span:nth-of-type(1),
+div.list-box div.list dl dd.attr span:nth-of-type(2),
+div.list-box div.list dl dd.attr span:nth-of-type(3) {
+	display: none;
+}
+div.list-box div.list dl dd.attr span:last-child,
+div.list-area dl.item dd.attr span:last-child /* Ã¨ÂÂ½Ã¦ÂÂ¢Ã¨ÂÂÃ¦Â°ÂÃ¨ÂÂ¤Ã¨ÂÂ¸Ã¨ÂÂÃ¨ÂÂ¯Ã¦ÂÂ®Ã¥Â¿ÂÃ¨ÂÂ¨Ã¦Â¥Â¼Ã¦Â°ÂÃ¨ÂÂÃ¨ÂÂÃ¨ÂÂ½Ã©ÂºÂ  */ {
+	padding: 5px 4px;
+	margin-right: 0;
+}
+/* ===================Pages Start============================ */
+div.list-area div.pages {
+	text-align: center;
+	margin: 0;
+	padding: 10px 0;
+}
+div.list-area div.pages strong,
+div.list-area div.pages a {
+	margin: 0 5px 0 0;
+}
+}
+
+/* Ã§ÂÂ²Ã§Â¦ÂÃ¦Â¥Â¼Ã§ÂÂ²Ã¨ÂµÂÃ¨ÂÂ¥Ã¦Â°ÂÃ¥ÂÂ¤Ã¨ÂÂ«Ã¦Â°ÂÃ©Â¹Â¿Ã¨ÂÂ²Ã¦Â°ÂÃ¥ÂºÂÃ©ÂÂÃ¦Â°ÂÃ¦Â½ÂÃ¥Â¨Â 1 ~ 300 Ã¦Â°ÂÃ¨ÂÂÃ¨ÂÂ«Ã¨ÂÂ½Ã©ÂºÂ Ã¦Â°ÂÃ¥ÂºÂÃ©ÂÂÃ¦Â°ÂÃ¦Â½ÂÃ¥Â¨ÂÃ¨ÂÂ½Ã¨ÂÂ·Ã¨ÂÂÃ¥Â¿Â Ã¨Â·Â¯Ã¦Â°ÂÃ¥Â½ÂÃ¨ÂÂ«Ã§ÂÂ«Ã¥ÂºÂÃ¦ÂÂ®Ã¨ÂÂ½Ã©ÂÂÃ¥ÂºÂ */
+
+@media all and (min-width: 1px) and (max-width: 300px) {
+/* ===================Main frame Start========================== */
+.wrap-content  /*Ã¨ÂÂÃ©ÂÂÃ§Â¢ÂÃ¨ÂÂÃ¨ÂÂºÃ¥ÂÂÃ§ÂÂ²Ã¨ÂµÂÃ§Â¦ÂÃ¥Â¿ÂÃ©ÂÂÃ¨Â Ã¥Â¿ÂÃ¨ÂÂ»Ã©ÂÂ²*/ {
+	width: 100%;
+	margin:0 auto;
+}
+	
+/* ===================Topbar Start============================= */
+.div.wrap-header /*Ã¨ÂÂÃ©ÂÂÃ©ÂÂ²Ã¥Â¿Â Ã¨ÂÂ«*/{
+	width: 100%;
+}
+div.center-box,
+div.wrap-header div.header-box  /*Ã¨ÂÂÃ©ÂÂÃ©ÂÂ²Ã¥Â¿Â Ã¨ÂÂ«Ã¥Â¿ÂÃ¨ÂÂ¬Ã¨ÂÂ¹Ã¨ÂÂ½Ã©ÂºÂÃ¥ÂÂÃ¥Â¿ÂÃ©ÂÂÃ¨Â */{
+	width: inherit;
+}
+div.center-box .search,
+div.wrap-header div.header-box .search /*Ã¨ÂÂÃ©ÂÂÃ©ÂÂ²Ã¥Â¿Â Ã¨ÂÂ«Ã¥Â¿ÂÃ¨ÂÂ¬Ã¨ÂÂ¹Ã¨ÂÂ½Ã©ÂºÂÃ¥ÂÂÃ¥Â¿ÂÃ©ÂÂÃ¨Â Ã§ÂÂ«Ã©ÂÂÃ§Â¯ÂÃ¦Â°ÂÃ¨ÂÂ§Ã¨ÂÂ²Ã¦Â°ÂÃ¨ÂÂÃ¨ÂÂÃ¨ÂÂ½Ã©ÂºÂ */{
+	padding: 0;
+	margin: 0;
+}
+div.header-box .search .searchBox .kwd input   /*Ã¨ÂÂÃ©ÂÂÃ©ÂÂ²Ã¥Â¿Â Ã¨ÂÂ«Ã¥Â¿ÂÃ¨ÂÂ¬Ã¨ÂÂ¹Ã¨ÂÂ½Ã©ÂºÂÃ¥ÂÂÃ¥Â¿ÂÃ©ÂÂÃ¨Â Ã§ÂÂ«Ã©ÂÂÃ§Â¯ÂÃ¦Â°ÂÃ¨ÂÂ§Ã¨ÂÂ²Ã¦Â°ÂÃ¨ÂÂÃ¨ÂÂÃ¨ÂÂ½Ã©ÂºÂ Ã¨ÂÂ½Ã¨ÂÂ·Ã¨ÂÂÃ¦Â°ÂÃ¨Â·Â¯Ã¥Â¨ÂÃ¨ÂÂ½Ã¥Â½ÂÃ¦Â¼ÂÃ§ÂÂ«Ã©Â©Â´Ã¨ÂÂ¸*/{
+	padding-left: 10px;
+}
+
+/* ===================Content Start=========================== */
+div.content /*Ã§ÂÂ²Ã¨ÂµÂÃ§Â¦ÂÃ§ÂÂ«Ã¥Â¨ÂÃ¨ÂÂÃ¦Â°ÂÃ¨Â Ã¨ÂÂÃ¦Â°ÂÃ¥ÂºÂÃ©Â¹Â¿Ã¦Â°ÂÃ¥ÂºÂÃ©Â¹Â¿Ã¦Â°ÂÃ¨ÂÂ¶Ã§Â¯Â*/{
+	width: inherit;
+	margin: 0 auto;
+}
+/* ===================Catagory and sort Start=================== */
+div.list-area div.sortby,
+div.list-area div.category,
+div.list-box div.sorted-by,
+div.list-box div.category {
+	margin: inherit;
+	padding: 5px 0 5px 10px;
+	width: 300%;
+	overflow: hidden;
+}
+div.list-area div.sortby a,
+div.list-area div.category a,
+div.list-box div.sorted-by a,
+div.list-box div.category a	{
+	padding: 5px 6px;
+	margin: 0 3px 0 0;
+}
+div.list-area div.category > span {
+	margin-right: 5px;
+}
+div.list-area div.category a span.n {
+	display: none;
+}
+/* ===================Search result item Start=================== */
+div.list-area dl.item,
+div.list-box div.list dl {
+	clear: left;
+	margin: 0;
+	padding: 3px 0;
+}
+div.list-area dl.item dt,
+div.list-box div.list dl dt {
+	width: calc( 100% - 78px );
+	padding: 5px;
+}
+div.list-area dl.item dd.attr span:nth-of-type(1),
+div.list-area dl.item dd.attr span:nth-of-type(2),
+div.list-area dl.item dd.attr span:nth-of-type(3),
+div.list-box div.list dl dd.attr span:nth-of-type(1),
+div.list-box div.list dl dd.attr span:nth-of-type(2),
+div.list-box div.list dl dd.attr span:nth-of-type(3) {
+	display: none;
+}
+div.list-box div.list dl dd.attr span:last-child,
+div.list-area dl.item dd.attr span:last-child /* Ã¨ÂÂ½Ã¦ÂÂ¢Ã¨ÂÂÃ¦Â°ÂÃ¨ÂÂ¤Ã¨ÂÂ¸Ã¨ÂÂÃ¨ÂÂ¯Ã¦ÂÂ®Ã¥Â¿ÂÃ¨ÂÂ¨Ã¦Â¥Â¼Ã¦Â°ÂÃ¨ÂÂÃ¨ÂÂÃ¨ÂÂ½Ã©ÂºÂ  */ {
+	padding: 5px 2px;
+	margin-right: 0;
+}
+/* ===================Pages Start============================ */
+div.list-area div.pages {
+	text-align: center;
+	margin: 0;
+	padding: 10px 0;
+}
+div.list-area div.pages strong,
+div.list-area div.pages a {
+	margin: 0 5px 0 0;
+}
+}
+
+}
+
+@-moz-document domain("javbus.pw"), domain("javbus.com"), domain("javbus.us"), domain("javbus.info"), domain("javbus2.pw"), domain("javbus.cc"), domain("javbus3.pw"), domain("javbus.xyz"), domain("javbus.org") {
+* {
+	font-weight: normal !important;
+}
+
+div.ad-body {
+		display: none !important;
+	}
+
+h4[style="position:relative"],
+	h4[style="position:relative"] + div,
+  div[class="col-md-3 info"] > p:last-child,
+	div[class="col-md-3 info"] > p:nth-last-child(2),
+	div.movie + div,
+	table.ad-table,
+	div.ad-list,
+	div.navbar-header,
+    div[class="pt10 text-center bn728-100"]{
+		display: none !important;
+	}
+	.h1, .h2, .h3, h1, h2, h3 {
+		margin: 35px 0 28px 0 !important;
+	}
+	div.container {
+		width: calc( 100% - 60px ) !important;
+	}
+	div.photo-info {
+		display: block;
+		min-height:  85px !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+		padding: 10px 10px 5px 10px !important;
+	}
+	div#related-waterfall .photo-info {
+		min-height: 36px !important;
+	}
+	.info a {
+		display: inline-block !important;
+		padding: 2px 5px !important;
+	}
+	info p {
+		padding: 2px 5px !important;
+	}
+	.info a:hover, .info a:active {
+		background: rgba(0,0,0,0.1) !important;
+		transition: all 0.2s;
+	}
+	div.screencap {
+		border: none !important;
+	}
+	.avatar-box,
+	.movie-box,
+	.sample-box {
+		display: inline-block;
+		width: auto !important;
+		padding: 0 !important;;
+		margin: 3px 7.65px 6px 0px !important;
+	}
+	.avator-box {
+		margin: 3px 5px 0px 0px !important;
+	}
+	.avatar-box {
+    width: 150px !important;
+	}
+	.movie-box {
+		width: 158px !important;
+	}
+	.avatar-box .photo-frame,
+	.sample-box .photo-frame {
+		overflow: hidden;
+		margin: 6px;
+	}
+	.avatar-box .photo-info {
+		min-height: 35px !important;
+	}
+
+	/*
+	.sample-box img {
+		min-width: 206px !important;
+		min-height: 168px !important;
+	}
+	
+	*/
+
+}
+
+@-moz-document domain("javfor.me") {
+div#wrap > div.fullsan:nth-of-type(1),
+  div#sidebar > div#largewidget > div.widget:last-child,
+  div.r18p,
+  div#comments,
+  div#logo {
+    display: none !important;
+  }
+}
+
+@-moz-document domain("btso.pw") {
+div.ishare,
+	data,
+	div.container > div.tags-box:nth-of-type(1),
+	div.container > div.tags-box a i,
+	a#playNow,
+	a#QRCodeButton,
+	a.btn-warning,
+	div.container > div.detail.data-list,
+	div[class="tags-box visible-xs-block"],
+	div[class="row hidden-xs pt-20 text-center w728c"],
+	div[class="row hidden-xs ptb-20 text-center w728c"],
+	div[class="row hidden-xs mtb-20 text-center w728c"] {
+		display: none !important;
+	}
+	
+	* {
+		text-transform: uppercase !important;
+	}
+	div.tags-box,
+	div.data-list {
+		width: 100% !important;
+		display: block;
+		height: auto !important;
+		background: rgba(255,255,255,1) !important;
+		border: 1px solid rgba(0,0,0,0.15) !important;
+		box-shadow: 0.5px 0.5px 5px rgba(0,0,0,0.15) !important;
+	}
+	div.tags-box{
+		padding: 15px !important;
+		margin: 20px auto !important;
+	}
+	div.data-list {
+		padding: 0 !important;
+		margin: 0 0 35px 0 !important;
+		overflow: hidden !important;
+	}
+	div.data-list .row {
+		display: block !important;
+		padding: inherit !important;
+		margin: 0 !important;
+		line-height: 28px !important;
+	}
+	div.data-list .row:hover {
+		background: rgba(0,0,0,0.05) !important;
+		transition:  all 0.25s !important;
+		transform: scale(1.01) !important;
+	}
+	div.data-list .row:first-child {
+		line-height: 55px !important;
+	}
+
+	div.data-list .row:first-child .field {
+		display: table-cell !important;
+		font-weight: bold;
+	}
+	
+	div.data-list .file {
+		overflow: hidden !important;
+		white-space: nowrap !important;
+		text-overflow: ellipsis !important;
+	}
+	div.tags-box a {
+		display:  inline-block;
+		width: 175px !important;
+		overflow: hidden !important;
+		white-space: nowrap !important;
+		text-overflow: ellipsis !important;
+		padding: 0 10px !important;
+		margin: 0 6px 5px 0 !important;
+		text-transform: uppercase !important;
+		background: rgba(0,0,0,0.05) !important;
+		border-radius: 4px !important;
+		text-align: left !important;
+	}
+	div.tags-box a:hover {
+		background: #d80456 !important;
+		color: rgba(255,255,255,1) !important;
+		transition: all 0.2s;
+	}
+}
+
+@-moz-document domain("3232.ml"), domain("ripe.cf") {
+	div#header,
+	body > center + div,
+	
+	body > p,
+	div.mt20,
+	div.fh,
+	div.bdshare-slide-button-box,
+	div.nav_bar {
+		display: none !important;
+	}
+	body {
+		margin-top: 75px !important;
+		background: rgba(255,255,255,1) !important;
+	}
+	div,p,a,span,h1,h2,h3,h4,h5,h6,strong {
+		font-family: "MuseoSansW01-300" !important;
+	}
+	a:not([class*="style1"]) {
+		color: rgba(0,0,0,0.75) !important;
+	}
+	a:hover:not([class*="style1"]) {
+		text-decoration: none !important;
+		color: rgba(0,128,255,1) !important;
+	}
+	div#menue,
+	div#greena {
+		display: block !important;
+		position: fixed !important;
+		top: 0 !important;
+		left: 0 !important;
+		padding: 0 !important;
+		margin: 0 !important;
+		width: 100% !important;
+		background: rgba(0,0,0,0.95) !important;
+	}
+	div#menue ul,
+	div#greena ul {
+		width: 1057px !important;
+		height: 55px !important;
+		margin: 0 auto !important;
+		vertical-align: middle !important;
+		padding: 0 !important;
+	}
+	div#menue li,
+	div#greena li {
+		background: none !important;
+		display: inline-block !important;
+		font-size: 1.1em !important;
+		margin-top: 12px !important;
+		padding: 8px 15px !important;
+		width: auto !important;
+		border: none !important;
+		line-height: 1em !important;
+		cursor: pointer !important;
+	}
+	div#menue li:hover,
+	div#greena li:hover {
+		background: rgba(0,128,255,1) !important;
+		transition: all 0.3s !important;
+		border-radius: 4px !important;
+	}
+	div#menue li a,
+	div#greena li a {
+		color: rgba(255,255,255,1) !important;
+	}
+	div.nav li {
+		display: inline-block !important;
+		border: none !important;
+	}
+	
+	div.meinv .class {
+		background: rgba(0,0,0,0.95) !important;
+	}
+}
+
+@-moz-document domain("javroot.com") {
+	div[style="width: 100%; top: 0px; bottom: 0px; left: 0px; right: 0px; background: rgb(0, 0, 0) none repeat scroll 0% 0%; position: fixed; z-index: 100000; opacity: 0.2;"],
+	div[style="background-color: #fff; border: 1px solid #ccc; box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2); position: absolute; left: 0px; top: -10000px; transition: visibility 0s linear 0.3s, opacity 0.3s linear; opacity: 0; visibility: hidden; z-index: 2000000000;"],
+  div[style="width: 400px; font-family: Arial; font-size: 14px; top: 20px; margin-right: auto; background: rgb(255, 255, 255) none repeat scroll 0% 0%; z-index: 100001; position: fixed; left: 50%; margin-left: -200px; margin-top: 200px; color: rgb(0, 0, 0); border-radius: 5px;"] {
+		display: none !important;
+  }
+}
+
+@-moz-document domain("css3maker.com") {
+div.adsBanne,
+div.tabNone,
+aside.narrowcolumnRight > div:last-child {
+    display: none !important;
+}
+}
+
+@-moz-document domain("css88.com") {
+div.miaov-wrap {
+		display: none !important;
+	}
+}
